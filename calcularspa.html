@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Calculador Média - Normal</title>
+    <title>Calculador Média + SPA</title>
 </head>
 <body>
     <div id="calculadora">
         <div class="header-text">
-            <h1>Calcule a sua Média Final</h1>
-            <span class="span-calculo">Como o calculo é feito: </br> <span class="calculo">(N1 + (2 * N2)) / 3</span></span>
+            <h1>Média com o SPA</h1>
+            <span class="span-calculo">Como o calculo é feito: </br> <span class="calculo"> (N1 + (2 * N2) + SPA) / 4</span></span>
         </div>
         
         <label>Nota 1</label>
@@ -20,9 +20,12 @@
         <label>Nota 2</label>
         <input type="number" id="Nota2" required>
         
+        <label>Nota SPA</label>
+        <input type="number" id="NotaSPA" required>
+        
         <div class="buttons-box">
-            <button onclick="Calcular()">Calcular</button>
-            <a href="calcularspa.html" class="link-page">Calcular Nota Final com SPA</a>
+            <button onclick="CalcularSPA()">Calcular</button>
+            <a href="index.html" class="link-page">Calcular somente a N1 e N2</a>
         </div>
     </div>
 
